@@ -1,0 +1,28 @@
+{
+  "name": "south-africa-regex",
+  "version": "1.0.0",
+  "description": "useful regex functions for south africa",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run tsc"
+  },
+  "keywords": [
+    "regex",
+    "south",
+    "africa",
+    "tax",
+    "number",
+    "za"
+  ],
+  "author": "matthew fainman",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "typescript": "^4.1.2"
+  }
+}
