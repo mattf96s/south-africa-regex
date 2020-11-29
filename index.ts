@@ -9,7 +9,7 @@ import {
   LuhnAlgorithm,
 } from "./src/index";
 
-module.exports = {
+export {
   isValidCellphoneNumber,
   isValidIdNumber,
   isValidGeographicNumber,
