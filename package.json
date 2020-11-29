@@ -1,6 +1,6 @@
 {
   "name": "south-africa-regex",
-  "version": "1.0.1.1",
+  "version": "1.0.2",
   "description": "useful regex functions for south africa",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
