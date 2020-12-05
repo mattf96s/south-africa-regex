@@ -110,10 +110,8 @@ export const CompanyDetailsSchema = Yup.object().shape({
 
 #### Construction
 
-| code    | description              |
-| ------- | ------------------------ | --- | --- | --- | ------------------------------------------------------ |
-| `(?:0   | 1                        | 2   | 3   | 9)` | starts with 0, 1, 2, 3, 9 within a non-capturing group |
-| `\d{9}` | followed by nine numbers |
+`(?:0 | 1 | 2 | 3 | 9)` starts with 0, 1, 2, 3, 9 within a non-capturing group  
+`\d{9}` followed by nine numbers
 
 ---
 
