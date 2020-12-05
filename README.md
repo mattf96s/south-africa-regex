@@ -110,8 +110,10 @@ export const CompanyDetailsSchema = Yup.object().shape({
 
 #### Construction
 
-`(?:0 | 1 | 2 | 3 | 9)` starts with 0, 1, 2, 3, 9 within a non-capturing group  
-`\d{9}` followed by nine numbers
+| code | description |
+|---|---|
+|`(?:0\|1\|\2\|\3\|9)`| starts with 0, 1, 2, 3, 9 within a non-capturing group  |
+|`\d{9}` | followed by nine numbers|
 
 ---
 
@@ -171,8 +173,8 @@ export const CompanyDetailsSchema = Yup.object().shape({
 ```
 
 | code     | description                                               |
-| -------- | --------------------------------------------------------- | ------------------------------------------------------------- |
-| `(?:\+27 | 0)`                                                       | calling code or international code within a non-capture group |
+| -------- | --------------------------------------------------------- |
+| `(?:\+27\|0)`                                                       | calling code or international code within a non-capture group |
 | `[1-5]`  | 2nd digit (which can be 1,2,3,4,5 for geographic numbers) |
 | ` \d{8}` | 8 normal digits                                           |
 
@@ -214,7 +216,7 @@ export const CompanyDetailsSchema = Yup.object().shape({
 
 | code       | description                      |
 | ---------- | -------------------------------- | -------------------------------------------------------- |
-| ```(?:\+27 | 0)```                            | calling code or international code without capture group |
+| `(?:\+27\|0)`                           | calling code or international code without capture group |
 | `[1-9]`    | 2nd digit cannot be zero         |
 | `\d{8}`    | last 8 digits can be any numbers |
 
