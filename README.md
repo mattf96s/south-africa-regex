@@ -151,9 +151,9 @@ export const CompanyDetailsSchema = Yup.object().shape({
 #### Construction
 
 | code     | description     |
-| -------- | --------------- | ------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| `(?:\+27 | 0)`             | calling code or international code within a non-capture group |
-| `(?:6\d  | 7[0-4]          | 7[6-9]                                                        | 8[1-4])` | 2nd and 3rd digits (which can be (60-74), (76-79), (81-84), for cellphone numbers) within a non-capture group |
+| -------- | --------------- |
+| `(?:\+27\|0)`             | calling code or international code within a non-capture group |
+| `(?:6\d\|7[0-4]\|7[6-9]\|8[1-4])` | 2nd and 3rd digits (which can be (60-74), (76-79), (81-84), for cellphone numbers) within a non-capture group |
 | `\d{7}`  | 7 normal digits |
 
 ---
