@@ -112,7 +112,7 @@ export const CompanyDetailsSchema = Yup.object().shape({
 
 | code | description |
 |---|---|
-|`(?:0\|1\|\2\|\3\|9)`| starts with 0, 1, 2, 3, 9 within a non-capturing group  |
+|`(?:0\|1\|2\|3\|9)`| starts with 0, 1, 2, 3, 9 within a non-capturing group  |
 |`\d{9}` | followed by nine numbers|
 
 ---
@@ -215,7 +215,7 @@ export const CompanyDetailsSchema = Yup.object().shape({
 #### Construction
 
 | code       | description                      |
-| ---------- | -------------------------------- | -------------------------------------------------------- |
+| ---------- | -------------------------------- | 
 | `(?:\+27\|0)`                           | calling code or international code without capture group |
 | `[1-9]`    | 2nd digit cannot be zero         |
 | `\d{8}`    | last 8 digits can be any numbers |
